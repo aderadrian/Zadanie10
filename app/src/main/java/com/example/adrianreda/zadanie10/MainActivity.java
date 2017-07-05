@@ -19,10 +19,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private SensorManager menedzer;
     private List<Sensor> listaCzujnik;
     private TextView lista_czujnikow;
-
     private ImageView iv;
     private TextView stopnie;
-    private Button sensorActivateButton;
+   
     private float obecnestopnie = 0f;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +31,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         stopnie = (TextView) findViewById(R.id.textView);
         lista_czujnikow = (TextView) findViewById(R.id.textView1);
         menedzer=(SensorManager)getSystemService(SENSOR_SERVICE);
-        sensorActivateButton = (Button)findViewById(R.id.button);
-
+        
 
 
     }
